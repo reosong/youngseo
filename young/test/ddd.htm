@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head charset="UTF-8">
+        <meta>
+
+        <style>
+            *{
+                box-sizing: border-box;
+
+            }
+            div{
+                text-align: left;
+                margin: 10px;
+                justify-content: space-around;
+            }
+
+            fieldset{
+                text-align: center;
+                width: 500px;
+                padding: 40px;
+            }
+            input{
+                width: 300px;
+            }
+
+
+        </style>
+
+
+
+
+    </head>
+    <body>
+        <h1>레드향 주문하기</h1>
+        <fieldset>
+            <legend><b>배송정보</b> </legend>
+            <div >
+                <label>이름<input type="text" style="width: 300px;"></label>
+            </div>
+            <div>배송주소 
+                <input type="text" style="width: 300px;">
+            </div>
+            <div>
+                이메일 
+                <input type="text">
+            </div>
+            <div>
+                연락처 
+                <input type="phone" placeholder="숫자만 입력해주세요" >
+            </div>
+            <div>
+                배송 지정
+                <input type="date" width="100px">
+                <small>주문일로부터 최소 3일 이후 </small>
+            </div>
+        </fieldset>
+        <div style="width: 100px; height: 40px;">
+            <input type="sumbit" value="주문하기 ">
+            <input type="reset" value="취소하기">
+        </div>
+
+
+
+
+
+
+
+
+
+    </body>
+
+
+
+
+
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+span{
+    font-size: 5px;
+    color: gray;
+}
+.a{
+    height: 40px;
+    border-bottom: solid 1px gray;
+    margin: 20px 0px 20px 20px;    
+    
+}
+    ul{
+        list-style: none;
+    }
+    h2{
+        margin: 20px 0 20px 20px ;
+    
+    }
+    .b{
+        display: inline;
+    }
+</style>
+
+
+
+
+</head>
+<body>
+    <h2 style="border-bottom:solid 3px royalblue;"><img src="images/us.png">&nbsp; 회원가입 정보</h2>
+        <Ul>    
+            <li class="a">
+                <ul>
+                <li class="b">*아이디</li>
+                <li class="b"> <input type="text">
+                <input type="button" value="중복확인" style="background-color: aquamarine;"> 
+                <span>영문 숫자 조합으로 4~12자 이내 </span>
+                </li>
+                </ul>
+            </li>
+
+            <li class="a">
+                <ul>
+                <li class="b">*비밀번호</li>
+                <li class="b"> <input type="password">
+                <span>영문, 숫자 조합으로 4~12자 이내 </span>
+                </li>
+                </ul>
+            </li>
+            <li class="a">
+                <ul>
+                <li class="b">*비밀번호 확인 </li>
+                <li class="b"> <input type="password">
+                    </li>
+                    </ul>
+            </li>
+            <li class="a">
+                <ul>
+                
+                <li class="b">*이름 </li>
+                <li class="b"><input type="text">
+                    </li>
+                </ul>
+            </li>
+            <li class="a">
+                <ul>
+                <li class="b">*생년월일 </li>
+                <li class="b"> <input type="text" style="width: 80px">년 &nbsp;
+                <input type="text" style="width: 40px;">월 &nbsp;
+                <input type="text" style="width: 40px;">일 
+                <input type="radio" name="moon" value="moon" checked>음력
+                <input type="radio" name="moon" value="sun">양력
+                </li>
+                    </ul>
+            </li>
+
+            <li class="a">
+                <ul>
+                <li class="b">*이메일</li>
+
+                <li class="b"><input type="email"></li>
+                </ul>
+            </li>
+            <li class="a">
+                <ul>
+                <li class="b">*휴대전화</li>
+                <li class="b"> <input type="text" style="width: 40px;"> -
+                 <input type="text" style="width: 40px;">
+                 - <input type="text" style="width: 40px;">
+                 </li>
+                 </ul>
+            </li>
+            <li class="a">
+                <ul>
+                <li class="b">*직업 </li>
+                 <li class="b"><select>
+                    <option>직업선택</option>
+                    <option>백수</option>
+                    <option>학생</option>
+                    
+                </select>
+                </li>
+                </ul>
+            </li>
+            <li class="a"> 
+                <ul>
+                <li class="b">*영어수강목적</li>
+              <il class="b">  <input type="checkbox"> 시험대비
+                <input type="checkbox"> 업무상 
+                <input type="checkbox"> 취미
+                <input type="checkbox"> 기타
+                </il>
+                </ul>
+            </li>
+        </Ul>
+
+        <div style="text-align: center;">
+            <input type="reset" value="가윕취소">
+            <input type="submit" value="가입완료">
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

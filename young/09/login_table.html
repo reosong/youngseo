@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>로그인 테이블 만들기</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      /* border: solid 1px #999999; */
+    }
+    body {
+      font-family: "맑은 고딕", "돋움";
+      font-size: 12px;
+      color: #444444;
+    }
+    #login_box {
+      width: 250px;
+      height: 120px;
+      border: solid 1px #bbbbbb;
+      border-radius: 15px;
+      margin: 10px 0 0 10px;
+      padding: 10px 10px 0 15px;
+    }
+    #login_table button{
+      margin-left: 5px;
+      padding: 12px;
+      border-radius: 5px;
+      
+    }
+    #login_table input {
+      width: 140px;
+    }
+    #join span{
+      margin-left: 20px;
+      padding-top: 20px;
+      text-decoration: underline;
+    }
+
+    h2 {
+      font-family: "Arial";
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="login_box">
+    <h2>Member Login</h2>
+    <table id="login_table">
+      <tr>
+        <td>ID</td>
+        <td><input type="text"></td>
+        <td rowspan="2"><button>로그인</button></td>
+      </tr>
+      <tr>
+        <td>PW</td>
+        <td><input type="password"></td>
+      </tr>
+      <tr>
+        <td id="join" colspan="3"><span>회원가입</span><span>아이디/비밀번호 찾기</span></td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>

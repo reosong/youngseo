@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입정보</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: "맑은 고딕";
+      font-size: 15px;
+    }
+    h2 {
+      margin: 10px 0 0 30px;
+      padding-bottom: 10px;
+      border-bottom: solid 3px #2222ff;
+    }
+    #mem_form {
+      margin: 20px 0 0 40px;
+      width: 1200px;
+    }
+    ul {
+      list-style-type: none;
+    }
+    .cols li {
+      display: inline-block;
+      margin: 10px 0 10px 0;
+    }
+    .cols li.col1 {
+      width: 110px;
+      text-align: right;
+    }
+    .cols li.col2 {
+      width: 800px;
+      padding-left: 10px;
+    }
+    .cols li.col2 input.num{
+      width: 40px;
+    }
+    span {
+      color: gray;
+      font-size: 12px;
+    }
+    .red {
+      color: red;
+    }
+    button {
+      background-color: #5555ff;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      padding: 0 5px 0 5px;
+    }
+  </style>
+</head>
+<body>
+  <h2>회원가입정보</h2>
+  <form action="#">
+    <ul id="mem_form">
+      <li>
+        <ul class="cols">
+          <li class="col1"><span class="red">*</span>아이디</li>
+          <li class="col2"><input type="text"> <button>중복확인</button> <span>영문, 숫자 조합으로 4~12자 이내</span></li>
+        </ul>
+      </li><hr>
+      <li>
+        <ul class="cols">
+          <li class="col1"><span class="red">*</span>비밀번호</li>
+          <li class="col2"><input type="password"> <span>영문, 숫자 조합으로 4~12자 이내</span></li>
+        </ul>
+      </li><hr>
+      <li>
+        <ul class="cols">
+          <li class="col1"><span class="red">*</span>비밀번호 확인</li>
+          <li class="col2"><input type="password"></li>
+        </ul>
+      </li><hr>
+      <li>
+        <ul class="cols">
+          <li class="col1"><span class="red">*</span>이름</li>
+          <li class="col2"><input type="text"></li>
+        </ul>
+      </li><hr>
+      <li>
+        <ul class="cols">
+          <li class="col1"><span class="red">*</span>생년월일</li>
+          <li class="col2">
+            <input type="number" class="num">년&nbsp; <input type="number" class="num">월&nbsp; <input type="number" class="num">일&nbsp; 
+            <input type="radio" name="birth" checked><span>음력</span> &nbsp;
+            <input type="radio" name="birth"><span>양력</span>
+          </li>
+        </ul>
+      </li><hr>
+      <li>
+        <ul class="cols">
+          <li class="col1"><span class="red">*</span>이메일</li>
+          <li class="col2"><input type="email"></li>
+        </ul>
+      </li><hr>
+      <li>
+        <ul class="cols">
+          <li class="col1"><span class="red">*</span>휴대전화</li>
+          <li class="col2"><input type="number" class="num"> - <input type="number" class="num"> - <input type="number" class="num"></li>
+        </ul>
+      </li><hr>
+      <li>
+        <ul class="cols">
+          <li class="col1">직업</li>
+          <li class="col2">
+            <select>
+              <option>직업선택</option>
+              <option>회사원</option>
+              <option>공무원</option>
+              <option>주부</option>
+              <option>학생</option>
+            </select>
+          </li>
+        </ul>
+      </li><hr>
+      <li>
+        <ul class="cols">
+          <li class="col1">영어수강목적</li>
+          <li class="col2">
+            <input type="checkbox" name="purpose"><span>시험대비</span>
+            <input type="checkbox" name="purpose"><span>업무상</span>
+            <input type="checkbox" name="purpose"><span>취미</span>
+            <input type="checkbox" name="purpose"><span>기타</span>
+        </li>
+        </ul>
+      </li><hr>
+      <li>
+        <ul class="cols">
+          <li class="col1">&nbsp;</li>
+          <li class="col2" style="text-align: center;"><input type="reset" value="가입취소"> <input type="submit" value="가입완료"></li>
+        </ul>
+      </li>
+    </ul>
+  </form>
+</body>
+</html>

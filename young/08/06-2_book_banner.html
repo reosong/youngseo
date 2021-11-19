@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>기본 설정된 margin, padding 값을 초기화</title>
+  <style>
+    * { /*  * : 모든 태그 선택자 (모든 태그의 여백을 없애고 처음부터 설정할 때 사용)*/
+      margin: 0;
+      padding: 0;
+    }
+    h3 {
+      margin: 20px 0px 0px 10px;
+    }ul {
+      /* border: solid 1px black; */
+      margin: 10px 0 0 30px;
+    }
+    li {
+      margin-top: 2px;
+    }
+    #banner {
+      border: solid 1px #cccccc;
+      width: 185px;
+      height: 236px;
+      background-image: url("img/banner_bg.jpg");
+      margin: 20px 0 0 10px;
+    }
+    #banner img {
+      margin: 202px 0px 0px 50px;
+    }
+  </style>
+</head>
+<body>
+  <h3> PHP 책 소개</h3>
+  <ul>
+    <li>저자 : 황재호</li>
+    <li>출판사 : 한빛 출판사</li>
+    <li>가격 : 30,000원</li>
+  </ul>
+  <div id="banner">
+    <a href="http://www.naver.com"><img src="img/buy.png"></a>
+  </div>
+</body>
+</html>

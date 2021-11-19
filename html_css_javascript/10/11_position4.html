@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부모 박스와 자식 박스에 position 설정하기 </title>
+    <!--부모 박스에 position이 설정이 되면 자식박스의 position 속성이
+    absolute일 경우 부모가 기준점이 된다.  -->
+    <style>
+        *{ 
+            margin: 0;
+            padding: 0;
+        }
+        #parent{
+            width: 500px;
+            height: 300px;
+            border: solid 3px black;
+            margin: 50px 0 0 50px;
+        }
+        #box1, #box2, #box3{
+            width: 80px;
+            height: 80px;
+            color: white;
+
+        }
+        #box1{
+            background-color: red;
+        }
+        #box2{
+            background-color: green;
+        }
+        #box3{
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+        }
+        #parent {
+            position: relative;
+        }
+        /*absolute는 부모의 position 설정이 있으면 부모가 기준점*/
+        /*absolute는 부모의 positon 설절리 없으면 좌측 최상단 (0,0) 기준점*/
+        /*Relative는 원래 자신의 자리가 기준점*/
+        
+        #box2{
+            position: absolute;
+            
+            top: 20px;
+            left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="box1">box a</div>
+        <div id="box2">box b</div>
+        <div id="box3">box c</div>
+
+
+
+    </div>
+    
+</body>
+</html>

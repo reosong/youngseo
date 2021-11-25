@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+    padding: 0;
+   
+}
+
+header{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(90, 87, 87);
+}
+#tag{
+    width: 100%; height: 35px;
+    background-color: rgb(236, 71, 59);
+    text-align: center;
+    color: white;
+    padding-top: 25px;
+}
+
+#header_ul{
+    width: 90%;  height: 40px; float: left; list-style: none;
+     margin: 0; padding: 0;
+     display: inline-block;
+}
+#header_li{
+    display: inline-block;
+    margin:0 0 20px 80px ;
+    
+    y
+
+}
+#apple_logo{
+    display: inline-block;
+     width: 10%; height: 40px; float:left 
+}
+#main_div{
+    width: 100%;
+    height: 600px;
+    background-color: rgb(243, 223, 227);
+}
+
+    
+#all_div{
+    width: 100%;
+    height: 150px;
+    padding-top:100px;
+    font-size: 50px; text-align: center;
+}
+#shopping{
+    width: 100%; height: 50px;
+    text-align: center; color: blue;
+    font-size: 20px;
+}
+#shopping_img{
+    width: 100%; height: 400px;
+
+}
+#shopping_img >ul{
+    list-style: none;margin: 0; padding: 0;
+}
+#shopping_img li{
+    width: 33%;
+    height: 400px;
+display: inline-block;
+}
+#shopping_image{
+    width: 100%;
+    height: 300px;
+}

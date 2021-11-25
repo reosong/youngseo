@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--
+    <script>
+        var day;
+        var week = new Date().getDay();
+        switch(week){
+            case 0:
+                day = "일요일 "; break;
+                case 1:
+                day = "월요일 "; break;
+                case 2:
+                day = "화요일 "; break;
+                case 3:
+                day = "수요일 "; break;
+                case 4:
+                day = "목요일 "; break;
+                default:
+                    day="없는 요일 "
+
+        }
+document.write("오늘은 "+ day+"입니다 ")
+
+
+    </script>
+-->
+
+<script>
+    var text;
+    var week = new Date().getDay();
+    switch(week){
+        case 1: 
+        case 2:
+            text= "html";
+            break;
+            case 3: 
+        case 4:
+            text= "java";
+            break;
+            case 5: 
+        case 6:
+            text= "python";
+            break;
+    }
+    document.write("오늘은 "+text+ "하는 날입니다. ")
+</script>
+
+
+    
+</body>
+</html>

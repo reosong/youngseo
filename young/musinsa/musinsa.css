@@ -20,12 +20,16 @@
 
 }
 
+
 /*헤더*/
 #header_mu{
     background-color: black;
     width: 100%;
     color: white;
     height: 50px;
+    position: fixed;
+    
+    
     
 }
 #header_div{

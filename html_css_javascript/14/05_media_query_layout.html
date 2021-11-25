@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="y"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0 ;
+            padding: 0;
+        }
+        
+        ul{
+            list-style-type: style type none; ;
+        }
+        body{
+            font-family: "맑은 고딕"; font-size: 100%;
+        }
+   
+        header{
+            height: 80px; padding: 20px; border: solid 1px red;
+            background-color: green ;
+        }
+        aside{
+            color: #ffffff;
+            border: solid 1px red;
+        }
+        aside li{
+            padding: 10px; margin: 5px; background-color: purple;
+        }
+        section #main{
+            padding: 15px;
+            border: solid 1px red;
+            height: 80px;
+        }
+        section #main p{
+            padding: 10px; font-size: 0.95em; line-height: 130%;
+        }
+
+        footer{
+            height: 60px; padding: 10px; text-align: center;
+            border: 1px solid red; background-color: yellowgreen;
+        }
+
+        .c1{ width: 8.33%; float: left; padding: 15px;}
+        .c2{ width: 16.33%; float: left; padding: 15px;}
+        .c3{ width: 25%; float: left; padding: 15px;}
+        .c4{ width: 33.33%; float: left; padding: 15px;}
+        .c5{ width: 41.63%; float: left; padding: 15px;}
+        .c6{ width: 50%; float: left; padding: 15px;}
+        .c7{ width: 58.33%; float: left; padding: 15px;}
+        .c8{ width: 66.66%; float: left; padding: 15px;}
+        .c9{ width: 75%; float: left; padding: 15px;}
+        .c10{ width: 91.55%; float: left; padding: 15px;}
+        .c11{ width: 100%; float: left; padding: 15px;}
+
+        @media only screen and(max-width:768px){
+            [class*="c"]{
+                 width:100%;
+            }
+        }
+
+        #btn{width:300px; height:50px; background-color:#fff; cursor:pointer; margin:0 auto; text-align:center; line-height:50px;}
+
+#slideTogglebox{width:300px; height:300px; background-color:beige; display:none; }
+
+
+    </style>
+</head>
+<body>
+    <header class="c11">
+        <h1>루바토의 사진 아카데미</h1>
+
+    </header>
+    <aside class="c3">
+        <ul>
+            <li>사진의 역사</li>
+            <li>노출이란</li>
+            <li>카메라 동작 모드</li>
+            <li>렌즈의 종류</li>
+        </ul>
+        <div class="clear"></div>
+<div id="btn">여기를 눌러주세용
+
+    <div id="slideTogglebox">슬라이드토글은 이렇겝니다</div>
+  </div>
+
+    </aside>
+
+    <section class="c9" id="main">
+    <h1>사진의 역사 </h1>
+    <p>rkrkrkrjl가ㅣㅓㅁ니ㅏ허ㅣㅏㅁㄴ어리ㅏ;ㅁ널;ㅣ먼리;ㅏㅓ;런ㅁ이ㅏ러미;ㅏ넒니ㅏㅓㅇ리;ㅓ낭ㄹㅁㄴㄹ</p>
+    <p>rkrkrkrjl가ㅣㅓㅁ니ㅏ허ㅣㅏㅁㄴ어리ㅏ;ㅁ널;ㅣ먼리;ㅏㅓ;런ㅁ이ㅏ러미;ㅏ넒니ㅏㅓㅇ리;ㅓ낭ㄹㅁㄴㄹ</p>
+    <p>rkrkrkrjl가ㅣㅓㅁ니ㅏ허ㅣㅏㅁㄴ어리ㅏ;ㅁ널;ㅣ먼리;ㅏㅓ;런ㅁ이ㅏ러미;ㅏ넒니ㅏㅓㅇ리;ㅓ낭ㄹㅁㄴㄹ</p>
+    </section>
+
+    <footer class="c11">
+        copyright 루바토 all rights reserved.
+    </footer>
+    
+</html>

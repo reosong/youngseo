@@ -121,6 +121,8 @@ text-align: right;
     padding-right: 10px;
     padding-left: 10px;
     font-family: "돋움";
+    a:link
+   
     
 }
 #aside_a{
@@ -128,6 +130,7 @@ text-align: right;
     border-right: solid 1px lightgray;
     display: inline-block;
     float: left;
+    a:link
 }
 #aside_section_2{
 

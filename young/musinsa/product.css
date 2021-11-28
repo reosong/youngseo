@@ -7,6 +7,24 @@
     color: rgb(23, 177, 238);
 }
 
+#rest{
+    list-style: none;
+    width: 50px;
+    height: 120px;
+    position: fixed;
+    bottom: 100px;
+    right: 5px;
+    
+
+}
+#rest_li{
+    width: 50px;
+    height: 30px;
+    border: 1px lightgray solid;
+    text-align: center;
+    font-size: 15px;
+    vertical-align: middle;
+}
 
 
 

@@ -34,7 +34,7 @@ a:hover{text-decoration: none;color: black;}
             <div id="header_div">
             <a href="./index.html" class="no_line" style="color: white;">
             <b>YOUNGSINSA STORE</b></a>
-            <input type="text" size="23px">
+            <input type="text" size="23px" class="hidden_text2">
             </div>
             <div id="header_div2">
                 <ul>
@@ -56,9 +56,9 @@ a:hover{text-decoration: none;color: black;}
     
     <div>
         <ul id="rest">
-            <a href="./hhhh/login.html"><li id="rest_li"> 로그인</li></a>
-            <a href="./hhhh/menu5.html"><li id="rest_li">장바구니</li></a>
-            <a href="#header_2"><li id="rest_li"> top </li></a>
+            <a href="./hhhh/login.html"><li id="rest_li" style="padding:15px 0 0 0;"> 로그인</li></a>
+            <a href="./hhhh/menu5.html"><li id="rest_li" style="height: 40px;">장바 <br>구니</li></a>
+            <a href="#header_2"><li id="rest_li" style="padding:15px 0 0 0;"> TOP </li></a>
         </ul>
 
     </div>
@@ -162,11 +162,12 @@ a:hover{text-decoration: none;color: black;}
     <main>
 
         <!--섹션 1-->
-        <section id="section_1">
+        <section id="section_1" class="isection_1" >
             <h1 style="padding-top: 10px;"> &nbsp; 랭킹</h1>
-            <aside id="section_aside">
+            <div class="hidden_text">
+            <aside id="section_aside" class="hidden_text">
                 <h3><b>상품</b></h3>
-                <ul >
+                <ul>
                     <li>전체</li>
                     <li>아우터</li>
                     <li>원피스</li>
@@ -194,12 +195,13 @@ a:hover{text-decoration: none;color: black;}
 
 
             </aside>
+            </div>
 
             <!--섹션1의 섹션 1시작 -->
-            <section id="section1_1">
-                <ul style="display: inline-block;">
+            <section id="section1_1 msection1_1">
+                <ul style="display: inline-block;" class="msection1_1_ul">
                     <li>
-                        <ul>
+                        <ul class="msection1_1_ul">
                         <li>
                             <a href="hhhh/bluejean.html">
                             <img src="images/mu8.jpeg" class="image_size_nomal">
@@ -209,7 +211,7 @@ a:hover{text-decoration: none;color: black;}
                         <li class="text_center">멋쟁이 청바지</li?>
                         <li class="text_center">259,000원</li>
                         </ul>
-                        <ul >
+                        <ul class="msection1_1_ul">
                             <li>
                                 <a href="hhhh/kakhi.html">
                                 <img src="images/mu4.jpg" class="image_size_nomal">
@@ -222,9 +224,9 @@ a:hover{text-decoration: none;color: black;}
 
                     </li>
                 </ul>
-                <ul style="display: inline-block;">
+                <ul style="display: inline-block;" class="msection1_1_ul">
                     <li>
-                        <ul>
+                        <ul class="msection1_1_ul">
                         <li><a href="./hhhh/product2.html">
                             <img src="images/suare.jpeg" class="image_size_nomal">
                             </a>
@@ -233,7 +235,7 @@ a:hover{text-decoration: none;color: black;}
                         <li class="text_center">니트</li?>
                         <li class="text_center">39,000원</li>
                         </ul>
-                        <ul >
+                        <ul class="msection1_1_ul">
                             <li><a href="./hhhh/product3.html">
                                 <img src="images/mu3.jpg" class="image_size_nomal">
                             </a></li>
@@ -244,9 +246,11 @@ a:hover{text-decoration: none;color: black;}
 
                     </li>
                 </ul>
-                <ul style="display: inline-block;">
+                
+                <ul style="display: inline-block; list-style: none;" class="msection1_1_ul_2">
+                    <div class="msection1_1_ul_hi">
                     <li>
-                        <ul>
+                        <ul class="msection1_1_ul">
                         <li><a href="./hhhh/product4.html">
                             <img src="images/brown.jpeg" class="image_size_nomal">
                             </a>
@@ -255,7 +259,7 @@ a:hover{text-decoration: none;color: black;}
                         <li class="text_center">완멋 후드티</li?>
                         <li class="text_center">39,900원</li>
                         </ul>
-                        <ul >
+                        <ul class="msection1_1_ul">
                             <li><a href="./hhhh/product5.html">
                                 <img src="images/mu7.jpeg" class="image_size_nomal">
                             </a></li>
@@ -265,7 +269,9 @@ a:hover{text-decoration: none;color: black;}
                         </ul>
 
                     </li>
+                </div>
                 </ul>
+                </div>
                
 
             </section>
@@ -293,7 +299,7 @@ a:hover{text-decoration: none;color: black;}
 
     <!--섹션 2-->
 
-    <section id="section_2">
+    <section class="section_2">
         <aside id="section_aside">
             <h3><b>스타일</b></h3>
             <ul>
@@ -390,7 +396,7 @@ a:hover{text-decoration: none;color: black;}
 
 
 <!--섹션 3-->
-<section id="section_3">
+<section class="section_3">
     <aside id="section_aside">
         <h3><b>스페셜</b></h3>
         <ul>
@@ -440,11 +446,6 @@ a:hover{text-decoration: none;color: black;}
             </ul>
 
 
-<div class="clear"></div>
-<div id="btn">여기를 눌러주세용
-
-    <div id="slideTogglebox">슬라이드토글은 이렇겝니다</div>
-  </div>
 
 
 

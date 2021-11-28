@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+header{
+    width: 100%;
+    height: 20%;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    padding: 20px 0 0 0;
+}
+nav{
+    background-color: rgb(205, 160, 241);
+    width: 100%;
+    height: 40%;
+}
+nav >ul {
+    width: 100%;
+    height: 50px;
+    list-style: none;
+}
+nav li{
+    margin-left: 100px;
+    height: 50px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 15px;
+    color: white;
+    font-size: 20px;
+}
+main{
+    width: 100%;
+    height: 500px;
+    background-color: lightgrey;
+}
+main > h1{
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    
+    
+    
+}
+footer{
+    background: linear-gradient(45deg,blue,rgb(19, 151, 228));
+    width: 100%;
+    height: 40px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px 0 0 0 ;
+
+}
+table{
+    border: 1px solid black;
+    width: 70%;
+    height: 400px;
+    margin-left: 200px;
+}
+.tr{
+    border: 1px solid black;
+    width: 800px;
+
+}
+.text{
+    border: solid 1px black;
+    width: 400px;
+    text-align: center;
+    font-weight: bold;
+
+}
+.input{
+    border: solid 1px black;
+    width: 400px;
+    text-align: left;
+}
+.form{
+    border-radius: 10px;
+}
+a:link{text-decoration: none;color: black;}
+a:visited{text-decoration: none;color: black;}
+a:active{text-decoration: none;color: black;}
+a:hover{text-decoration: none;color: black;}
+@media only screen and (max-width: 700px) {
+    nav{
+        height: 250px;
+    }
+    nav li{
+        margin-top: 0;
+        display: block;
+        margin-left: 0;
+        padding-top: 15px;
+    }
+    table{
+        margin-left: 13%;
+    }
+
+    
+}
+</style>
+</head>
+<body>
+    <header>
+        쇼핑몰 회원관리 ver 1.0 
+
+    </header>
+    <nav>
+        <ul>
+            <li>회원등록 </li>
+            <li>회원목록조회/수정 </li>
+            <li>회원매출조회</li>
+            <li>홈으로</li>
+            
+        </ul>
+    </nav>
+    <main>
+        <h1><a href="./test.html"> 쇼핑몰 회원 등록 </a></h1>
+        <section>
+            <table>
+                <tbody>
+           <tr class="tr">
+               <td class="text">회원번호(자동발생)</td>
+               <td class="input"><input type="text" class="form"></td>
+           </tr>
+           <tr class="tr">
+            <td class="text">회원성명</td>
+            <td class="input"><input type="text" class="form"></td>
+        </tr>
+        <tr class="tr">
+            <td class="text">회원주소</td>
+            <td class="input"><input type="text" class="form"></td>
+        </tr>
+        <tr class="tr">
+            <td class="text">가입일자</td>
+            <td class="input"><input type="text" class="form"></td>
+        </tr>
+        <tr class="tr">
+            <td class="text">고객등급[A:VIP, B:일반,C:직원]</td>
+            <td class="input"><input type="text" class="form"></td>
+        </tr>
+        <tr class="tr">
+            <td class="text">도시코드</td>
+            <td class="input"><input type="text" class="form"></td>
+        </tr>
+        <tr class="tr" style="text-align: center;">
+            <td colspan="2"> <input type="submit" value="등록"> <input type="submit" value="조희"> </td>
+        </tr>
+
+            </tbody>
+            </table>
+        
+
+        </section>
+
+    </main>
+    <footer>
+        <div>HRDKOREA copyright@2016 All right reserve. Human Resources Development Service of KOREA</div>
+    </footer>
+
+
+
+
+    
+</body>
+</html>

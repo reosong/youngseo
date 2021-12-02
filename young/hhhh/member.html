@@ -90,7 +90,7 @@
 
 
 <body>
-    <form action="singup" method="post">
+    <form action="http://localhost:8070/testProject_1/singup" method="post">
     <div id="div_login">
         <a href="../index.html"><div id="div_login2"> <b>MUSINSA</b> </div></a>
     
@@ -98,21 +98,21 @@
         <div id="div_id"> 
             <ul class="ul_left">
                 <li >아이디</li>
-                <li class="li_margin"><input type="text" id="input_id" placeholder="아이디를 입력하세요(5자~11자) "></li>
+                <li class="li_margin"><input type="text" name="m_name" id="input_id" placeholder="아이디를 입력하세요(5자~11자) "></li>
             </ul>
         </div>
         <br>
         <div id="div_password"> 
             <ul class="ul_left">
                 <li> 비밀번호</li>
-                <li class="li_margin"><input type="password" id="input_password" placeholder="비밀번호(숫자 영문 특수문자 조합 최소 8자 이상) "></li>
+                <li class="li_margin"><input type="password" name="m_pass" id="input_password" placeholder="비밀번호(숫자 영문 특수문자 조합 최소 8자 이상) "></li>
                 <li><input type="password" id="input_password" placeholder="비밀번호 확인 "></li>
             </ul>
         </div>
         <div>
             <ul class="ul_left"
                 <li>이메일</li>
-                <li><input type="email" placeholder="이메일" id="input_email"></li>
+                <li><input type="email" name="m_email" placeholder="이메일" id="input_email"></li>
             </ul>
         </div>
         <div>

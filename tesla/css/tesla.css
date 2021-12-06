@@ -50,16 +50,17 @@ list-style: none;
     
 }
 #menu_shop{
-    width:20%;
+    width:15%;
     height: 50px;
     float: right;
+  
     
 }
 #menu_shop>ul{
     list-style: none;
    
     }
-#menu_shop li{
+.menu_shop_li{
         display: inline-block;
         font-weight: bold;
         padding-top: 20px;
@@ -94,3 +95,47 @@ list-style: none;
    background-size: 100% 100vh;
 }
 .session{}
+
+.title{
+   font-size: 50px;
+   padding-top: 10%;
+   padding-left: 43%;
+   font-weight: bold;
+}
+.iconBtn { width: 35px; cursor: pointer;    display: inline-block;
+    font-weight: bold;
+    padding-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;}
+ .menuWrap.on { right: 0; } 
+ .menuWrap { position: fixed; top: 0; right: -300px; z-index: 400; width: 300px; height: 100%; 
+padding: 50px 20px; box-sizing: border-box; transition: right 0.3s ease-in-out; background-color: #ffffff; } 
+ #menuBtn { width: 35px; z-index: 401; transition: all 0.3s ease-in-out; cursor: pointer; } 
+ #dimmed { position: fixed; top: 0; left: 0; z-index: 300; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); } 
+ .btnRotate { transform: rotate(-90deg); transition: all 0.3s ease-in-out; }
+.menuList{
+    list-style: none;
+}
+ .listStyle{
+   font-size: 20px;
+   margin-top: 30px;
+}
+.button1{
+    padding: 30% 20% 15% 32%;
+}
+.btn1{
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 15px;
+    background-color: rgb(85, 84, 84);
+    color: white;
+
+}
+.btn2{
+    margin-left: 100px;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 15px;
+}

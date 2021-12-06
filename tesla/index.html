@@ -7,68 +7,109 @@
     <title>Electric Cars</title>
     <link rel="stylesheet" href="./css/tesla.css">
     <script src="./css/tesla.js"></script>
+    <script src ="css/menu.js"></script>
+    
+        
+    
+    <style>
+        a:link{text-decoration: none;color: black;}
+a:visited{text-decoration: none;color: black;}
+a:active{text-decoration: none;color: black;}
+a:hover{text-decoration: none;color: black;}
+    
+    </style>
 </head>
 <body>
     <main>
+        <nav id="menu">
+
+            <div id="logo"><a href="index.html"> T E S L A</a></div>
+
+
+            <div id="menu_name">
+                <ul>
+                    <li>Model S</li>
+                    <li>Model 3</li>
+                    <li>Model X</li>
+                    <li>Model Y</li>
+                    <li>Solar roof</li>
+                    <li>Solar pannel</li>
+                </ul>
+            </div>
+
+
+            <div id="menu_shop">
+                <ul>
+                    <li class="menu_shop_li">shop</li>
+                    <li class="menu_shop_li">계정</li>
+                    <li class="iconBtn" id="menuBtn">메뉴</li>
+                    <div class="menuWrap"> 
+                        <nav id="menu"> 
+                            <ul class="menuList"> 
+                             
+
+                                <li class="listStyle"> <a href="#">로그인</a> </li>
+                                <li class="listStyle"><a href="#">인벤토리</a></li>
+                                <li class="listStyle"> <a href="#">인증중고 인벤토리</a> </li> 
+                                <li class="listStyle"> <a href="#">보상판매</a> </li>
+                                <li class="listStyle"> <a href="#">상업용 에너지</a> </li>
+                            </ul> 
+                        </nav>
+                     </div>
+
+
+                </ul>
+            </div>
+            <div class="clear"></div>
+
+        </nav>
          <section class="session" id="model_y">
-            <nav id="menu">
-
-                <div id="logo">T E S L A</div>
-
-
-                <div id="menu_name">
-                    <ul>
-                        <li>Model S</li>
-                        <li>Model 3</li>
-                        <li>Model X</li>
-                        <li>Model Y</li>
-                        <li>Solar roof</li>
-                        <li>Solar pannel</li>
-                    </ul>
+             <div class="title">Model y</div>
+         
+             <div class="button1">
+                 <input class="btn1" type="button" value="주문하기">
+                 <input class="btn2" type="button" value="자세히 알아보기">
                 </div>
-
-
-                <div id="menu_shop">
-                    <ul>
-                        <li>shop</li>
-                        <li>account</li>
-                        <li>menu</li>
-                    </ul>
-                </div>
-                <div class="clear"></div>
-
-            </nav>
-    
+            
         
         </section>
         
        
 
     </div>
-    <div class="session" id="model_3"> 
-        <div id="stay">
-        테슬라 뀨
-    </div>
+    <section class="session" id="model_3">
+        <div class="title">Model 3</div>
     
+        <div class="button1">
+            <input class="btn1" type="button" value="주문하기">
+            <input class="btn2" type="button" value="자세히 알아보기">
+           </div>
+       
+   
+   </section>
 
 
 
+   <section class="session" id="model_x">
+    <div class="title">Model X</div>
 
-    </div>
+    <div class="button1">
+        <input class="btn1" type="button" value="주문하기">
+        <input class="btn2" type="button" value="자세히 알아보기">
+       </div>
+   
 
-    <div class="session" id="model_x">
+</section>
+<section class="session" id="model_s">
+    <div class="title">Model S</div>
 
+    <div class="button1">
+        <input class="btn1" type="button" value="주문하기">
+        <input class="btn2" type="button" value="자세히 알아보기">
+       </div>
+   
 
-
-
-    </div>
-    <div class="session" id="model_s">
-
-
-
-
-    </div>
-
+</section>
 
 
 

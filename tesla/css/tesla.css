@@ -104,6 +104,12 @@ list-style: none;
    padding-left: 43%;
    font-weight: bold;
 }
+.navBox { display: flex; justify-content: space-between;
+     align-items: center; font-weight: bold; font-family: "NEXON Lv2 Gothic Bold"; 
+     font-size: 1.5em; margin: 5px; 
+    }
+
+
 .iconBtn { width: 35px; cursor: pointer;    display: inline-block;
     font-weight: bold;
     padding-top: 20px;

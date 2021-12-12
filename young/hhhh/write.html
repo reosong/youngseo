@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -141,34 +142,34 @@
             <table>
             <thead class="table_list">
                 <tr>
-                    <th class="thead_th"> 번호 </th>
-                    <th class="thead_th_big"> 글 제목 </th>
-                    <th class="thead_th"> 작성자 </th>
-                    <th class="thead_th"> 작성일 </th>
+                    <th class="thead_th_long">글 작성 </th>
                 </tr>
             </thead>
 
 
             <tbody>
+                <form action="">
                 <tr>
-                    <th class="tbody_th"> 1 </th>
-                    <th class="tbody_th_big"> 가입하는 방법 </th>
-                    <th class="tbody_th"> 송영서 </th>
-                    <th class="tbody_th"> 2021.12.12 </th>
+                    <th class="text_th"> <input type="text" name="Title"class="text_small" placeholder="글 제목을 입력해주세요 ">  </th>
+                  
+                </tr>
+
+                <tr>
+                    <th class="textarea_th"> <textarea name="Content"class="text_big" > </textarea> </th>
+                 
                 </tr>
 
 
-
-
+               
             </tbody>
 
 
             </table>
         </div>
         <div>
-            <a href="write.html"><button id="button_gray">글쓰기</button></a>
+           <input type="submit" value="제출" id="button_gray">
         </div>
 
-
+    </form>
 
     </main>

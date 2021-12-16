@@ -14,6 +14,11 @@
     src : url("./TESLA.ttf"); 
     font-family: "te";
 }
+@font-face {
+    src : url("https://cdn-design.tesla.com/tds-fonts/3.x/woff2/GothamSSm-Book_Web.woff2"); 
+    font-family: "tess";
+    
+}
 #menu{
     position: fixed;
     width: 100%;
@@ -31,12 +36,13 @@
  
 }
 #menu_name{
-    margin-left: 80px;
+    margin-left: 150px;
     width: 50%;
     height: 60px;
     float:left;
     font-style:initial;
     font-weight: 10px;
+    font-family: 'tess';
    
 }
 #menu_name>ul{
@@ -46,13 +52,13 @@ list-style: none;
 #menu_name li{
     display: inline-block;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 15px;
     padding-top: 20px;
-    padding-right: 30px;
+    padding-left: 25px;
     
 }
 #menu_shop{
-    width:15%;
+    width:10%;
     height: 50px;
     float: right;
   

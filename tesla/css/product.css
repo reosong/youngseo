@@ -14,6 +14,10 @@
     src : url("./TESLA.ttf"); 
     font-family: "te";
 }
+@font-face {
+    src : url("https://cdn-design.tesla.com/tds-fonts/3.x/woff2/GothamSSm-Book_Web.woff2"); 
+    font-family: "tess";
+}
 #menu{
     position: fixed;
     width: 100%;

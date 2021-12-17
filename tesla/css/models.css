@@ -12,7 +12,6 @@
 @font-face {
     src : url("https://cdn-design.tesla.com/tds-fonts/3.x/woff2/GothamSSm-Book_Web.woff2"); 
     font-family: "tess";
-    
 }
 #menu{
     position: fixed;
@@ -28,7 +27,6 @@
    font-size: 20px;
    float: left;
    padding: 20px 0 0 20px;
-   
  
 }
 #menu_name{
@@ -39,8 +37,6 @@
     font-style:initial;
     font-weight: 10px;
     font-family: 'tess';
-    
-    
    
 }
 #menu_name>ul{
@@ -53,7 +49,6 @@ list-style: none;
     font-size: 15px;
     padding-top: 20px;
     padding-left: 25px;
-   
     
 }
 #menu_shop{
@@ -81,7 +76,7 @@ list-style: none;
 #model_y1{
     width: 100%;
     height: 100vh;
-   background-image:url(../img/model3_11.png) ;
+   background-image:url(../img/models_11.png) ;
    background-size: 100% 100vh;
    
    
@@ -97,7 +92,7 @@ list-style: none;
  .title_sub{
      width: 100%;
 margin-top: 25%;
-margin-left: 25%;
+margin-left: 15%;
  }
  .title_sub >ul{
      display: inline-block;
@@ -143,25 +138,27 @@ margin-left: 25%;
 #model_y3{
     width: 100%;
     height: 100vh;
-   background-image:url(../img/model3_12.png) ;
-   background-size: 100% 75vh;
-   background-repeat: no-repeat;
+   
     
 }
 .y3_text{
-    padding-top: 45%;
+    padding-top: 35%;
     padding-left: 10%;
 }
 .y_section1{
     width: 30%;
     height: 20vh;
     float: left;
+    padding-top: 10%;
+    padding-left: 10%;
 
 }
 .y_section2{
     width: 50%;
     height: 20vh;
     float: left;
+    padding-top: 10%;
+
 }
 .clear{
     clear: both;
@@ -189,24 +186,15 @@ margin-left: 25%;
     width: 100%;
     height: 100vh;
    background-image:url(../img/modely4.png) ;
-   background-size: 70% 100vh;
+   background-size: 100% 70vh;
    background-repeat: no-repeat;
 }
 .y4_text{
-    padding-top: 45%;
-    padding-left: 3%;
-   
-    width: 60%;
-    float: left;
-   
-
+    padding-top: 28%;
+    padding-left: 15%;
 }
 .y4_text2{
-width: 30%;
-height: 70vh;
-float: right;
-padding-top: 10%;
-
+    padding-top: 7%;
 }
 .y4_text >ul{
     list-style: none;
@@ -218,13 +206,33 @@ padding-top: 10%;
 #model_y5{
     width: 100%;
     height: 100vh;
-   background-image:url(../img/model3_14.png) ;
+   background-image:url(../img/models_14.png) ;
    background-size: 100% 70vh;
    background-repeat: no-repeat;
 }
 
   #video1 {max-width: 60%; height: 100%; display: block; float: left; }
-  #video2{width: 100%; height: 100%; display: block; float: left;}
+  #video2{width: 100%; height: 70%; display: block; float: left;}
+  #video3{width: 100%; height: 100%; display: block; float: left;}
+
+  .video_section1{
+    width: 30%;
+    height: 20vh;
+    float: left;
+    padding-top: 5%;
+    padding-left: 15%;
+
+}
+.video_section2{
+    width: 50%;
+    height: 20vh;
+    float: left;
+    padding-top: 5%;
+    padding-left: 10%;
+
+}
+
+
 
   a:link{text-decoration: none;color: black;}
   a:visited{text-decoration: none;color: black;}

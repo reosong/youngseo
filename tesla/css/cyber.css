@@ -52,7 +52,7 @@ list-style: none;
     
 }
 #menu_shop{
-    width:10%;
+    width:13%;
     height: 50px;
     float: right;
   
@@ -86,7 +86,7 @@ list-style: none;
     padding-top: 10%;
     padding-left: 43%;
     font-weight: bold;
-    color: white;
+    color: black;
     font-family: 'tess';
  }
  .title_sub{

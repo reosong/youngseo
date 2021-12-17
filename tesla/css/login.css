@@ -1,18 +1,19 @@
 body{
     text-align: center;
-    background-color: lightgray;
+    background-color: black;
 }
 #div_login{
 margin-left: 30%;
 width: 500px;
 
 height: 1000px;
-background-color: white;
+background-color:black;
 }
 #div_login2{
 padding-top: 50px;
 font-size: 30px;
 font-family: 'te';
+color: white;
 
 }
 #div_member{

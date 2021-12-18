@@ -42,26 +42,41 @@ a:hover{text-decoration: none;color: black;}
 .session{
     width: 65%;
     height: 90vh;
-    padding-top: 4%;
+   margin-top: 4%;
  position: fixed;
 }
 .side_session{
-    margin-top: 4%;
+   
 width: 20%;
-height: 90vh;
-border: 1px red solid;
+height: 100vh;
+
 float: right;
 display: inline-block;
 }
+.side_session2{
+   
+    width: 40%;
+    height: 100vh;
+    
+    float: right;
+    display: inline-block;
+    }
 .model{
    width: 100%;
    text-align: center;
    font-size: 35px;
    font-family: "tess";
-   margin-top: 30px;
+   margin-top: 50px;
    font-weight: bold;
 }
-
+.model2{
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    font-family: "tess";
+    margin-top: 50px;
+   
+ }
 .low{
     width: 40%;
     display: inline-block;
@@ -81,17 +96,80 @@ display: inline-block;
     margin-top: 5%;
     border-radius: 30px;
     background-color: white;
+    text-align: center;
   
 }
 .clicked {
     color: blue;
   }
   .button_size{
-      width: 40px;
-      height: 40px;
+      width: 30px;
+      height: 30px;
   }
+  .button_size2{
+    width: 50px;
+    height: 50px;
+   
+}
   .radius{
       border-radius: 100px;
       display: inline-block;
-      
+
+      border: none;
   }
+  .color_ul{
+    display: inline-block; margin-top: 15%; width: 100%;
+  }
+  .color_li{
+      display: inline-block;
+      list-style: none;
+      margin-left: 6%;
+     
+  }
+  .color_li2{
+    display: inline-block;
+    list-style: none;
+    margin-left: 20%;
+   
+}
+  .bt{
+    border-radius: 100px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    
+
+  }
+
+  .color_ul2{
+    display: inline-block; margin-top: 15%; width: 100%;
+    text-align: center;
+  }
+
+  .color_li3{
+    display: inline-block;
+   
+    margin-left: 6%;
+    color: gray;
+   
+}
+.button2{
+    width: 80%;
+    height: 40px;
+    margin-left: 10%;
+    margin-top: 5%;
+    border-radius: 30px;
+    background-color: blue;
+    text-align: center;
+    color: white
+  
+}
+.button3{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    display: inline-block;
+background-color: white;
+font-size: 25px;
+font-weight: bold;
+}

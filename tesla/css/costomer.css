@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+   
     
 }
 a:link{text-decoration: none;color: black;}
@@ -22,7 +23,7 @@ a:hover{text-decoration: none;color: black;}
     position: fixed;
     width: 100%;
     height: 50px;
-   border: 1px solid red;
+  
    display: inline-block;
 
 }
@@ -39,25 +40,4 @@ a:hover{text-decoration: none;color: black;}
 
 .clear{
     clear: both;
-}
-.list{
-    border: 1px solid red;
-    width: 80%;
-    height: 90vh;
-   padding-top: 10%;
-    margin-left: 10%;
-}
-.tdd{
-    border: 1px black solid;
-    width: 5%;
-    height: 5%;
-}
-.trr{
-    width: 100%;
-    height: 9%%;
-}
-.tata{
-    width: 100%;
-    height: 100%;
-    border: 1px red solid;
 }

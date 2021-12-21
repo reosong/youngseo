@@ -97,6 +97,18 @@ display: inline-block;
     border-radius: 30px;
     background-color: white;
     text-align: center;
+    
+}
+.button1-1{
+    width: 80%;
+    height: 40px;
+    margin-left: 10%;
+    margin-top: 5%;
+    border-radius: 30px;
+    background-color: white;
+    text-align: center;
+    border: 1px solid blue;
+   
   
 }
 .clicked {

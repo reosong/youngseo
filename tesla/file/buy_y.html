@@ -102,10 +102,18 @@
                 </ul>
                
             </div>
-
+<script>
+            function sendmodel(value)
+            {
+            	document.getElementsByClassName("button1")[0].className = "button1-1";
+            	var model = value;
+            }
+            
+        </script>
             <div class="butt">
-                <input type="botton" value="Long Range 70,000" class="button1">
-                <input type="botton" value="Performance 90,000" class="button1" style="margin-top: 10%;">
+                <button type="botton" value="Long Range 70,000" onclick="sendmodel(this.value)" class="button1" >Long Range 70,000</button>
+                <button type="botton" value="Performance 90,000"  onclick="sendmodel(this.value)" class="button1" style="margin-top: 10%;">Performance 90,000</button>
+                
             </div>
 
             <div class="model2" style="margin-top: 30%;">색 상</div>
@@ -118,11 +126,13 @@
                 </li>
                 <li class="color_li">
                     <div>
+                        <input type="radio" style="display: none;">
                         <button class="radius"><img class="button_size" src="../img/Paint_Blue.png" alt=""></button>
                     </div>
                 </li>
                 <li class="color_li">
                     <div>
+                        <input type="radio" style="display: none;">
                         <button class="radius"><img class="button_size" src="../img/Paint_MidnightSilver.png" alt=""></button>
                     </div>
                 </li>

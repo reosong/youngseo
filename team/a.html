@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <template>
+        <header>
+            <Loginmodal @close="closeModal"  v-if="modal"></Loginmodal>
+            <!-- =======상단바======= -->
+            <div class="topbar_wrap">
+                <div class="topbar_container">
+                    <ul class="topbar_item">
+                        <li @click="openModal" v-if="loginStatus">로그인/회원가입</li>
+                        <li @click="logout" v-else>로그아웃</li>
+                        <li @click="homePage"><a href="#">앱 다운로드</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+           <!-- =========로고바======== -->
+           <div class="logobar_wrap">
+               <!-- 로고 -->
+                <div class="logo_container" @click="homePage">
+                    <img alt="logo" src="@/assets/근본거래11.jpg">
+                </div>
+                <!-- 검색창 -->
+                <div class="search_container">
+                    <!-- 카테고리 선택창 -->
+                    <select name="category" v-model="categoryLargeId">
+                        <option value="all">카테고리 전체</option>
+                        <option value="10001">디지털/가전</option>
+                        <option value="10002">여성의류</option>
+                        <option value="10003">남성의류</option>
+                        <option value="10004">패션잡화</option>
+                        <option value="10005">뷰티미용</option>
+                        <option value="10006">취미애완</option>
+                        <option value="10007">스포츠레저</option>
+                        <option value="10008">생활문구가구식품</option>
+                    </select>
+                    <!-- 검색 input -->
+                    <input type="text" v-model="search" @keyup.enter="searchPage">
+                    <!-- 검색 button -->
+                    <button type="submit" @click="searchPage">
+                        <font-awesome-icon icon="search" />
+                    </button>
+                </div>
+                <!-- 판매하기,마이페이지,채팅 -->
+                <div class="menu_container">
+                    <!-- 판매하기 -->
+                    <div class="sell" @click="sellPage">
+                        <div>
+                            <font-awesome-icon icon="won-sign" class="font"/> 
+                        </div>
+                        <div>
+                            판매하기
+                        </div>
+                    </div>
+                    <!-- 마이페이지 -->
+                    <div class="mypage" @click="myPage">
+                        <div>
+                            <font-awesome-icon icon="user" class="font"/> 
+                        </div>
+                        <div>
+                            마이페이지
+                        </div>
+                    </div>
+                    <!-- 채팅 -->
+                    <div class="chat" @click="talkPage">
+                        <div>
+                            <font-awesome-icon icon="comments" class="font"/> 
+                        </div>
+                        <div>
+                            채팅
+                        </div>
+                    </div>
+                </div>
+            </div>
+             
+            <!-- ======카테고리바======= -->
+            <div class="categorybar_wrap">
+                <div class="categorybar_container">
+                    <!-- 전체 카테고리 메뉴 -->
+                    <div class="category_all">
+                        <!-- 메인 카테고리 -->
+                        <ul class="maincategory">
+                            <li>
+                                <font-awesome-icon icon="list-ul" class="list-ul"/><span>전체 카테고리 </span>
+                                <!-- 서브 카테고리 -->
+                                <div class="subcategory">
+                                    <ul class="category_large" v-for="(largeitem,index) in categoryInfo" :key="index">
+                                        <router-link :to="{ path: '/bycategory/list', query: {no: 1, categoryLargeId: largeitem.large[0][0] }}">
+                                            <li class="category_large_item">
+                                                {{largeitem.large[0][1]}}                                        
+                                            </li>
+                                        </router-link>
+                                        <ul class="category_medium" v-for="(mediumitem,index1) in largeitem.medium" :key="index1">
+                                      
+                                            <router-link :to="{ path: '/bycategory/list', query: {no: 1, categoryLargeId: largeitem.large[0][0], categoryMediumId: mediumitem[0] }}">
+                                                <li class="category_medium_item">
+                                                    {{mediumitem[1]}}
+                                                </li>    
+                                            </router-link>
+                                        </ul>
+                                    </ul>                          
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 홈 -->
+                    <div class="home" @click="homePage">
+                        HOME
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+</body>
+</html>

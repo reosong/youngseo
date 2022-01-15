@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,130 +10,150 @@
         a:visited{text-decoration: none;color: black;}
         a:active{text-decoration: none;color: black;}
         a:hover{text-decoration: none;color: black;}
-            
-        </style>
-<link rel="stylesheet" href="../musinsa/product.css">
 
+        </style>
+<!--    <link rel="stylesheet" href="../musinsa/product.css?ver2">-->
+    <link rel="stylesheet" href="/musinsa/product.css?11">
+   
+    <link href="${pageContext.request.contextPath}/musinsa/product.css" rel="stylesheet" />
 </head>
 <body>
 
 
-    <!--영신사 스토어 헤더  -->
-    <header id="header_mu">
-            <div id="header_div">
-            <a href="../index.html" class="no_line" style="color: white;">
+<!--영신사 스토어 헤더  -->
+<header id="header_mu">
+    <div id="header_div">
+        <a href="/hhhh" class="no_line" style="color: white;">
             <b>YOUNGSINSA STORE</b></a>
-            <input type="text" size="23px">
-            </div>
-            <div id="header_div2">
-                <ul>
-                    <li style="color: blue;">주말특가</li>
-                    <li style="color: purple;">아우터</li>
-                    <li style="color: red;">#SELF_LOVE</li>
-                    <li>랭킹</li>
-                    <li>업데이트</li>
-                    <li>코디</li>
-                    <li>세일</li>
-                    <li>스페셜</li>
-                    <li>이벤트</li>
-                    <li>브랜드</li>
-                </ul>
-            </div>
-            <div class="clear"></div>
-    </header>
-
-
-    <!--스탠다드 쪽 헤더 -->
-    <header id="header_2">
-        <ul>
-            <li>스탠다드</li>
-            <li>테라스샵</li>
-            <li>셀렉트</li>
-        </ul>
-
-    </header>
-
-    <!--개인정보 헤더 -->
-    <header id="header_3">
-        <ul>
-            <li>
-                <a href="../hhhh/login.html" class="no_line" style="color: black;"> 
-                    로그인</a> 
-            </li>
-            <li class="sky">바로접속 On</li>
-            <li> <a href="../hhhh/menu1.html">알림</a></li>
-            <li><a href="../hhhh/menu2.html"> 마이페이지</a></li>
-            <li>  <a href="../hhhh/menu3.html"> 최근 본 상품</a></li>
-            <li><a href="../hhhh/menu4.html"> 좋아요</a></li>
-            <li><a href="../hhhh/menu5.html">장바구니</a></li>
-            <li><a href="../hhhh/menu6.html"> 주문배송조회</a></li>
-            <li><a href="../hhhh/menu7.html"> 고객센터 </a></li>
-            <li><a href="../hhhh/menu8.html">로그아웃</a></li>
-            <li class="sky"><a href="../hhhh/menu9.html"> 친구초대 EVENT</a></li>
-        </ul>        
-    </header>
-    <div>
-        <ul id="rest">
-            <a href="../hhhh/login.html"><li id="rest_li" style="padding:15px 0 0 0;"> 로그인</li></a>
-            <a href="../hhhh/menu5.html"><li id="rest_li" style="height: 40px;">장바 <br>구니</li></a>
-            <a href="#header_2"><li id="rest_li" style="padding:15px 0 0 0;"> TOP </li></a>
-        </ul>
 
     </div>
+    <div id="header_div2">
+        <ul>
+            <li style="color: blue;">주말특가</li>
+            <li style="color: purple;">아우터</li>
+            <li style="color: red;">#SELF_LOVE</li>
+            <li>랭킹</li>
+            <li>업데이트</li>
+            <li>코디</li>
+            <li>세일</li>
+            <li>스페셜</li>
+            <li>이벤트</li>
+            <li>브랜드</li>
+        </ul>
+    </div>
+    <div class="clear"></div>
+</header>
 
 
+<!--개인정보 헤더 -->
+<header id="header_3">
+    <ul>
+        <li>
+            <a href="/hhhh/login" class="no_line" style="color: black;" th:if="${session.userID==null}" th:text="'로그인'">
+                로그인</a>
+            <a href="/hhhh/login" class="no_line" style="color: black;" th:unless="${session.userID==null}" th:text="${session.userID}">
+                로그인</a>
+        </li>
+        <li class="sky" >
+            <a href="/hhhh/login" class="no_line" style="color: rgb(23, 177, 238);" th:if="${session.userID==null}" th:text="'바로접속 off'">
+                바로접속</a>
+            <a href="/hhhh/login" class="no_line"  style="color: rgb(23, 177, 238);" th:unless="${session.userID==null}" th:text="'바로접속 on'">
+                바로접속</a>
+        </li>
+        <li><a href="./hhhh/myPage"> 마이페이지</a></li>
+        <li><a href="./hhhh/cart">장바구니</a></li>
+        <li><a href="./hhhh/orderSearch"> 주문배송조회</a></li>
+        <li><a href="./hhhh/costomer"> 고객센터 </a></li>
+        <li><a href="./hhhh/logout">로그아웃</a></li>
 
-    <!-- 왼쪽 목차 -->
-    <aside id="aside_a">
-        <section>
-            <ul class="navbar_menu" style="list-style: none;">
-                <a href="./best.html"> 
+    </ul>
+</header>
+
+<div>
+    <ul id="rest">
+        <a href="redirect:/localhost:8080/hhhh/login"><li id="rest_li"  style="padding:15px 0 0 0;"> 로그인</li></a>
+        <a href="../hhhh/menu5.html"><li id="rest_li" style="height: 40px;">장바 <br>구니</li></a>
+        <a href="#header_2"><li id="rest_li" style="padding:15px 0 0 0;"> TOP </li></a>
+    </ul>
+
+</div>
+
+
+<!-- 왼쪽 목차 -->
+<aside id="aside_a">
+    <section>
+        <ul class="navbar_menu" style="list-style: none;">
+            <a href="./hhhh/category/bset">
                 <li class="aside_li">인기<span class="aside_small">&nbsp; Best</span></li>
-                </a>
-                <a href="./top.html"> 
+            </a>
+            <a href="./hhhh/category/top">
                 <li class="aside_li">상의 <span class="aside_small">&nbsp; Top</span></li>
-                </a>
-                <a href="./outer.html"> 
+            </a>
+            <a href="./hhhh/category/outer">
                 <li class="aside_li">아우터<span class="aside_small">&nbsp; Outer</span></li>
-                </a>
-                <a href="./pants.html"> 
+            </a>
+            <a href="./hhhh/category/bottom">
                 <li class="aside_li">바지<span class="aside_small">&nbsp; Pants</span></li>
-                </a>
-                <a href="./onepiece.html"> 
+            </a>
+            <a href="./hhhh/category/onepiece">
                 <li class="aside_li">원피스<span class="aside_small">&nbsp; Onepiece</span></li>
-                </a>
-                <a href="./skirt.html"> 
+            </a>
+            <a href="./hhhh/category/skirt">
                 <li class="aside_li">스커트<span class="aside_small">&nbsp; Skirt</span></li>
-                </a>
-                <a href="./sneakers.html"> 
+            </a>
+            <a href="./hhhh/category/sneakers">
                 <li class="aside_li">스니커즈<span class="aside_small">&nbsp; Sneakers</span></li>
-                </a>
-                <a href="./shoes.html"> 
+            </a>
+            <a href="./hhhh/category/shoes">
                 <li class="aside_li">신발<span class="aside_small">&nbsp; Shoes</span></li>
-                </a>
-                <a href="./bag.html"> 
+            </a>
+            <a href="./hhhh/category/bag">
                 <li class="aside_li">가방<span class="aside_small">&nbsp; Bag</span></li>
-                </a>
-                <li class="aside_li">여성가방<span class="aside_small">&nbsp; Women's bag</span></li>
+            </a>
+            <a href="./hhhh/category/sunglass">
                 <li class="aside_li">선글라스<span class="aside_small">&nbsp; Sunglass</span></li>
+            </a>
+            <a href="./hhhh/category/accessory">
                 <li class="aside_li">액세서리<span class="aside_small">&nbsp; Accessory</span></li>
+            </a>
+            <a href="./hhhh/category/watch">
                 <li class="aside_li">시계<span class="aside_small">&nbsp; Watch</span></li>
+            </a>
+            <a href="./hhhh/category/jewelry">
                 <li class="aside_li">주얼리<span class="aside_small">&nbsp; Jewelry</span></li>
-            </ul>
-        </section>
+            </a>
+        </ul>
+    </section>
 
 
-        <section id="aside_section_2">
-            <ul>
-                <li>이미지 삽입</li>
-                <li><b>1번 배송 / 교환 / 환불관련</b></li>
-                <li><b>2번 결제 / 회원관련</b></li>
-                <li style="font-size: 15px; color: lightgrey;">오전 9시~오후 6시 운영</li>
-            </ul>
+    <section id="aside_section_2">
+        <ul>
+            <li>이미지 삽입</li>
+            <li><b>1번 배송 / 교환 / 환불관련</b></li>
+            <li><b>2번 결제 / 회원관련</b></li>
+            <li style="font-size: 15px; color: lightgrey;">오전 9시~오후 6시 운영</li>
+        </ul>
 
 
-        </section>
-    </aside>
+    </section>
+</aside>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -142,90 +162,46 @@
 
 
 <!-- 메인-->
-    <main>
-        <h1 id="company" style="background-color: coral;">
-           <img src="../images/suarelong.png" >
-        </h1>
-
-
-        <aside id="photo">
-            <img src="../images/suare2.jpeg">
-        </aside>
-
-
-        <aside id="info">
-
-            <!--상품정보-->
-            <section id="info_1">
-               <h1 style="font-size: 30px; " ><b>Product Info</b>
-                    <span style="color: lightgray;font-size: 20px;">제품정보</span>
-                </h1>
-
-                <ul id="info_left"">
-                    <li>브랜드 / 품번 </li>
-                    <li>시즌 / 성별</li>
-                    <li>조회수(1개월)</li>
-                    <li>누적판매(1년)</li>
-                    <li>좋아요</li>
-                    <li>구매후기</li>
-                    
-                </ul>
-                <ul id="info_right">
-                    <li>Suare/ 67283 </li>
-                    <li>2021 F/W / 남</li>
-                    <li>20.3만 회 이상</li>
-                    <li>3.3만개 이상</li>
-                    <li>20,662</li>
-                    <li>2000개</li>
-                </ul>
-                <div class="clear"></div>
-            </section>
-
-
-            <!--배송정보-->
-            <section id="info_2">
-
-
-                <h1 style="font-size: 30px; " ><b>Delivery Info</b>
-                    <span style="color: lightgray;font-size: 20px;">배송정보</span>
-                </h1>
-
-                <ul id="info_left"">
-                    <li>배송 방법</li>
-                    <li>출고 기간</li>
-                   
-                    
-                </ul>
-                <ul id="info_right">
-                    <li>국내배송 / 입점사배송 / 한진</li>
-                    <li>평균 1.1일 / 주말 공휴일 제외</li>
-                    
-                </ul>
-                <div class="clear"></div>
-            </section>
+<main>
 
 
 
-            <!--가격정보-->
-            <section id="info_3">
-                <h1 style="font-size: 30px; " ><b>Price Info</b>
-                    <span style="color: lightgray;font-size: 20px;">가격정보</span>
-                </h1>
+    <aside id="photo">
+        <img src="../images/bluejean.jpeg" th:src ="${product.photo2}">
+    </aside>
 
-                <ul id="info2_left"">
-                    <li>무신사 판매가</li>
-                    <li>무신사 회원가</li>
-                    <li>무신사 적립금</li>
-                   
-                    
-                </ul>
-                <ul id="info_right">
-                    <li style="color: gray; font-size: 30px;">66,000원</li>
-                    <li style="font-size: 20px;">35,000원</li>
-                    <li style="margin-top: 20px;">1900원</li>
-                   
-                </ul>
-                <div class="clear"></div>
+
+    <aside id="info">
+
+        <!--상품정보-->
+        <section id="info_1">
+            <h1 style="font-size: 30px; " ><b>Product Info</b>
+                <span style="color: lightgray;font-size: 20px;">제품정보</span>
+            </h1>
+
+            <ul id="info_left">
+                <li>브랜드</li>
+                <li> 품번 </li>
+                <li> 시즌 </li>
+                <li> 성별 </li>
+                <li>조회수(1개월)</li>
+
+                <li>좋아요</li>
+                <li>구매후기</li>
+
+            </ul>
+
+            <ul id="info_right">
+                <li th:text="${product.modelBrand}">생로랑  </li>
+                <li th:text="${product.modelNum}"> sl1234 </li>
+                <li th:text="${product.season}">21fw</li>
+                <li th:text="${product.sex}">성별 </li>
+                <li th:text="${product.countNum}">조회수</li>
+                <li th:text="${product.likeNum}">좋아요</li>
+                <li >구매후기</li>
+            </ul>
+            <div class="clear"></div>
+        </section>
 
 
 
@@ -233,28 +209,131 @@
 
 
 
+        <!--가격정보-->
+        <section id="info_3">
+            <h1 style="font-size: 30px; " ><b>Price Info</b>
+                <span style="color: lightgray;font-size: 20px;">가격정보</span>
+            </h1>
+
+            <ul id="info2_left">
+                <li>무신사 판매가</li>
+                <li>무신사 회원가</li>
+                <li>무신사 적립금</li>
 
 
-            </section>
+            </ul>
+            <ul id="info_right">
+                <li style="color: gray; font-size: 30px;" th:text="|${product.price}원|" >490,000원</li>
+                <li style="font-size: 20px;"th:text="|${#numbers.formatDecimal(product.price*0.9,0,0)}원|">259,000원</li>
+                <li style="margin-top: 20px;" th:text="|${#numbers.formatDecimal(product.price*0.1,0,0)}원|">2590원</li>
+
+            </ul>
+            <div class="clear"></div>
+
+        </section>
+
+
+
+        <!--구매하기 -->
+        <section id="info_2">
+
+            <div id="location" >
+                <form action="" class="subbox">
+                    <input type="hidden">
+                    <input type="submit" value="구매하기" id="buy">
+                </form>
+                <form action="" class="subbox">
+                    <input type="hidden">
+                    <input type="submit" value="장바구니" id="chart">
+                </form>
+                <form action="" class="subbox">
+                    <input type="hidden">
+                    <input type="submit" value="좋아요" id="likePlus">
+                </form>
+            </div>
+
+        </section>
 
 
 
 
 
+    </aside>
+
+    <div class="clear"></div>
 
 
-        </aside>
-
-      <div class="clear"></div>
-
-
-    </main>
+</main>
 
 <div id="clear"></div>
+<div class="page">
+    상세 페이지
+</div>
+
+<div class="big_box">
+    <img src="../images/bluejean.jpeg" th:src ="${product.photo3}">
 
 
+</div>
+<div class="big_box">
+    <img src="../images/bluejean.jpeg" th:src ="${product.photo4}">
 
 
+</div>
+<div class="big_box">
+    <img src="../images/bluejean.jpeg" th:src ="${product.photo5}">
+
+
+</div>
+<div class="big_box">
+    <img src="../images/bluejean.jpeg" th:src ="${product.photo6}">
+
+
+</div>
+
+<!-- 댓글 -->
+<div class="page" style="font-size:40px;">
+    상품 후기
+</div>
+<div class="re_box">
+
+    <ul style="width: 100%; list-style: none;">
+        <li style="width: 100%; list-style: none;">
+            <ul class="re_title" style=" background-color: bisque;">
+                <li class="re_id" style="font-size: 20px; font-weight: bold;">아이디</li>
+                <li class="re_content" style="font-size: 20px; font-weight: bold;">내용</li>
+                <li class="re_time" style="font-size: 20px; font-weight: bold;">작성 시간</li>
+            </ul>
+        </li>
+
+        <div th:each="com:${comment}">
+            <li style="width: 100%; list-style: none;">
+                <ul class="re_title">
+                    <li class="re_id"  th:text="${com.userID}">송영서</li>
+                    <li class="re_content" th:text="${com.content}">가나다라마바사</li>
+                    <li class="re_time" th:text="${com.date}">2022-01-12</li>
+                </ul>
+            </li>
+        </div>
+
+        <div style="margin-top:30px;">
+        <form action="" th:action="|/hhhh/category/top/topNum?modelNum=${product.modelNum}|" method="post">
+            <input type="hidden" value="" th:value="${session.userID}" name="userID">
+            <ul style="width: 100%; list-style: none;">
+                <li style="width: 100%; list-style: none;">
+                    <ul class="re_re" >
+                        <li class="re_id">후기 남기기</li>
+                        <input type="textarea" name="content" class="re_content2">
+                        <li class="re_time"><input type="submit" class="button1" value="확인"></li>
+
+                    </ul>
+                </li>
+            </ul>
+        </form>
+        </div>
+
+
+<div style="width: 60%; height: 60px;"></div>
 
 
 </body>
